@@ -3,3 +3,5 @@ npm-debug.log
 package-lock.json
 .deploy
 .DS_Store
+build_rsync.md
+build.sh
