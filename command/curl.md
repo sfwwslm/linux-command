@@ -506,3 +506,21 @@ Installing Yarn!
 100   647  100   647    0     0   1283      0 --:--:-- --:--:-- --:--:--  1283
 100   832  100   832    0     0   1107      0 --:--:-- --:--:-- --:--:--  812k
 ```
+
+#### **使用代理功能**
+
+http代理
+```shell
+curl http://192.168.1.1 --proxy 192.168.2.1:7890 --proxy-user user:pwd
+curl -x 192.168.2.1:7890 -U user:pwd http://192.168.1.1 
+```
+
+socks5代理
+```shell
+curl http://192.168.1.1  --socks5 192.168.2.1:7890 --proxy-user user:pwd
+```
+
+使用代理下载文件
+```sh
+curl -x http://<user>:<pwd>@192.168.2.1:7890 -O https://downloadmirror.intel.com/826914/Release_29.2.zip
+```
