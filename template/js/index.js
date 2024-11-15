@@ -1,3 +1,8 @@
+
+document.addEventListener('contextmenu', function(e) {
+  e.preventDefault(); // 阻止右键菜单
+});
+
 /**
 * 对数组进行排序，作为 Array.sort() 回调函数使用
 */
